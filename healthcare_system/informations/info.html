@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor's Biography</title>
+    <link rel="stylesheet" href="information/graph.css">
+    <style>
+        /* Στυλ για το κουμπί */
+        #changeColorButton {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+  
+    <div class="content">
+        <h1>Dr. Dimitris Dimitriou </h1>
+        <p>Dr. Dimitris Dimitriou is a distinguished cardiologist with over 20 years of experience. He studied at the Medical School of the University of Athens and specialized in cardiology at the Athens University Hospital.</p>
+        
+        <h2>Education</h2>
+        <p>Dr. Dimitris Dimitriou obtained his medical degree from the University of Athens in 1998 and continued with postgraduate studies in Cardiology at Yale University. He has also attended numerous seminars and conferences in Greece and abroad.</p>
+        
+        <h2>Professional Experience</h2>
+        <p>Dr. Dimitris Dimitriou has gained extensive professional experience, both in Greece and abroad:</p>
+        
+        <ul>
+            <li><strong>2000-2005:</strong> Worked as a resident cardiologist at the Athens University Hospital, gaining experience in diagnosing and treating heart diseases.</li>
+            <li><strong>2006-2010:</strong> Served as a cardiologist at the General Hospital of Thessaloniki, handling numerous procedures and patients with complex cardiac conditions.</li>
+            <li><strong>2010-2011:</strong> Collaborated with the Royal London Hospital, where he specialized in new techniques in interventional cardiology.</li>
+            <li><strong>2018 (6 months):</strong> Participated in a research program at the University Hospital of Zurich, focusing on innovative methods of diagnosing heart diseases.</li>
+            <li><strong>2011-2019:</strong> Served as the Director of the Cardiology Clinic at the Medical Center of Piraeus, providing high-level care and leading a team of specialists.</li>
+            <li><strong>Since 2020:</strong> He has been running his own practice in Athens, offering specialized cardiology services and continuing his research in the field of cardiology.</li>
+        </ul>
+        
+        <h2>Awards and Honors</h2>
+        <p>He has received numerous awards for his contribution to the medical community and has published over 50 scientific articles in international journals.</p>
+        
+        <h2>Personal Interests</h2>
+        <p>In his free time, Dr. Dimitris Dimitriou enjoys hiking, photography, and reading medical books and journals.</p>
+
+        <h2>Contact Information</h2>
+        <p><strong>Phone:</strong> +30 210 1234567</p>
+
+        <h2>Office Hours</h2>
+        <p><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM</p>
+        <p><strong>Saturday:</strong> 10:00 AM - 2:00 PM</p>
+        <p><strong>Sunday:</strong> Closed</p>
+        
+        <button id="changeColorButton">click here</button>
+    </div>
+</div>
+
+<script>
+    var button = document.getElementById("changeColorButton");
+    
+    button.addEventListener("click", function() {
+        var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+        
+        document.body.style.backgroundColor = randomColor;
+    });
+</script>
+
+<script src="information/script.js"></script>
+
+</body>
+</html>

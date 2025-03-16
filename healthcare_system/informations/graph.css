@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.photo {
+    margin-right: 20px;
+}
+
+.photo img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.content {
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
